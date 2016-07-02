@@ -22,6 +22,12 @@ TimeAtSampleIndex <- function(sample.index, sample.rate) {
 
 #' Extract a range of sample indexes.
 #'
+#' Sample indices take precedence over times. When boudaries are omitted
+#' (\code{NA}) then the boundaries of the signal are used.
+#'
+#' If \code{max.samples} is \code{NA} all the sample indices in the range are
+#' returned.
+#'
 #' @param signal Source signal
 #' @param first.sample.index First sample index.
 #' @param last.sample.index Last sample index.
@@ -34,6 +40,25 @@ TimeAtSampleIndex <- function(sample.index, sample.rate) {
 SampleIndexRange <- function(signal,
                              first.sample.index, last.sample.index,
                              from.time, to.time, max.samples) {
+  # convert times and use dafault values
+  if (is.na(first.sample.index)) {
+    if (is.na(from.time)) {
+      first.sample.index <- 1
+    } else {
+      first.sample.index <- SampleIndexAtTime(from.time, signal$sample.rate)
+    }
+  }
+  if (is.na(last.sample.index)) {
+    if (is.na(to.time)) {
+      last.sample.index <- signal$n.samples
+    } else {
+      last.sample.index <- SampleIndexAtTime(to.time, signal$sample.rate)
+    }
+  }
+  if (is.na(max.samples)) {
+    max.samples <- Inf
+  }
+  # compute the new sample index range
   samples.between <- last.sample.index - first.sample.index + 1
   sample.index.range <- seq.int(first.sample.index, last.sample.index,
                                 length.out=min(samples.between, max.samples))
@@ -44,32 +69,20 @@ SampleIndexRange <- function(signal,
 #'
 #' Samples outside the signal range are assumed to be zero.
 #'
-#' Sample indices take precedence over times.
+#' Range parameters are interpreted by \code{\link{SampleIndexRange}}.
 #'
 #' @inheritParams SampleIndexRange
 #'
 #' @return A named list containing two items: \code{time} and \code{iq}.
 #'
 #' @export
-SampleRange <- function(signal,
-                        first.sample.index = 1,
-                        last.sample.index = signal$n.samples,
-                        from.time = 0,
-                        to.time = signal$duration,
-                        max.samples = Inf) {
-  # convert times and indices (sample indices have precedence)
-  sample.rate <- signal$sample.rate
-  if (missing(first.sample.index)) {
-    first.sample.index <- SampleIndexAtTime(from.time, sample.rate)
-  }
-  if (missing(last.sample.index)) {
-    last.sample.index <- SampleIndexAtTime(to.time, sample.rate)
-  }
+SampleRange <- function(signal, first.sample.index = NA, last.sample.index = NA,
+                        from.time = NA, to.time = NA, max.samples = NA) {
   # compute the sample index range
   sample.index.range <- SampleIndexRange(signal, first.sample.index, last.sample.index,
-                                         max.samples = max.samples)
+                                         from.time, to.time, max.samples)
   # compute the time range
-  time <- TimeAtSampleIndex(sample.index.range, sample.rate)
+  time <- TimeAtSampleIndex(sample.index.range, signal$sample.rate)
   # normalize and convert samples to complex numbers defaulting to zero for the
   # values outside the signal sample range
   valid.range <- sample.index.range > 0 & sample.index.range <= signal$n.samples

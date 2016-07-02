@@ -25,6 +25,11 @@ A vector containing at most \code{max.samples} sample indices from
   the given range.
 }
 \description{
-Extract a range of sample indexes.
+Sample indices take precedence over times. When boudaries are omitted
+(\code{NA}) then the boundaries of the signal are used.
+}
+\details{
+If \code{max.samples} is \code{NA} all the sample indices in the range are
+returned.
 }
 

@@ -4,9 +4,8 @@
 \alias{SampleRange}
 \title{Extract a range of the signal.}
 \usage{
-SampleRange(signal, first.sample.index = 1,
-  last.sample.index = signal$n.samples, from.time = 0,
-  to.time = signal$duration, max.samples = Inf)
+SampleRange(signal, first.sample.index = NA, last.sample.index = NA,
+  from.time = NA, to.time = NA, max.samples = NA)
 }
 \arguments{
 \item{signal}{Source signal}
@@ -28,6 +27,6 @@ A named list containing two items: \code{time} and \code{iq}.
 Samples outside the signal range are assumed to be zero.
 }
 \details{
-Sample indices take precedence over times.
+Range parameters are interpreted by \code{\link{SampleIndexRange}}.
 }
 
