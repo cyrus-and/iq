@@ -10,9 +10,9 @@ SampleIndexRange(signal, first.sample.index, last.sample.index, from.time,
 \arguments{
 \item{signal}{Source signal}
 
-\item{first.sample.index}{Time of the first sample.}
+\item{first.sample.index}{First sample index.}
 
-\item{last.sample.index}{Time of the last sample.}
+\item{last.sample.index}{Last sample index.}
 
 \item{from.time}{Time of the first sample.}
 

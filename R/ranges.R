@@ -23,8 +23,8 @@ TimeAtSampleIndex <- function(sample.index, sample.rate) {
 #' Extract a range of sample indexes.
 #'
 #' @param signal Source signal
-#' @param first.sample.index Time of the first sample.
-#' @param last.sample.index Time of the last sample.
+#' @param first.sample.index First sample index.
+#' @param last.sample.index Last sample index.
 #' @param from.time Time of the first sample.
 #' @param to.time Time of the last sample.
 #' @param max.samples Maximum number of returned sample indices.
