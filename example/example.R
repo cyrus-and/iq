@@ -7,7 +7,7 @@ palette <- colorRampPalette(c('#000000', '#0074ff', '#00f900', '#ff4200'))(100)
 
 # setup the plot layout
 layout(matrix(c(1:4, 5, 5, 6, 7), nrow = 4, ncol = 2))
-par(mar = c(4, 4, 2, 0.5), mgp = c(2.5, 1, 0))
+par(mar = c(4, 4, 2, 2), mgp = c(2.5, 1, 0))
 
 # load the signal from file
 signal <- iq::FromFile(file.name = 'example/signal.bin.bz2',
