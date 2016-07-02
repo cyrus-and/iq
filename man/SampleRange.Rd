@@ -24,9 +24,7 @@ SampleRange(signal, first.sample.index = NA, last.sample.index = NA,
 A named list containing two items: \code{time} and \code{iq}.
 }
 \description{
-Samples outside the signal range are assumed to be zero.
-}
-\details{
-Range parameters are interpreted by \code{\link{SampleIndexRange}}.
+Samples outside the signal range are assumed to be zero. Range parameters are
+interpreted by \code{\link{SampleIndexRange}}.
 }
 

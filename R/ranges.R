@@ -23,10 +23,8 @@ TimeAtSampleIndex <- function(sample.index, sample.rate) {
 #' Extract a range of sample indexes.
 #'
 #' Sample indices take precedence over times. When boudaries are omitted
-#' (\code{NA}) then the boundaries of the signal are used.
-#'
-#' If \code{max.samples} is \code{NA} all the sample indices in the range are
-#' returned.
+#' (\code{NA}) then the boundaries of the signal are used. If \code{max.samples}
+#' is \code{NA} all the sample indices in the range are returned.
 #'
 #' @param signal Source signal
 #' @param first.sample.index First sample index.
@@ -67,9 +65,8 @@ SampleIndexRange <- function(signal,
 
 #' Extract a range of the signal.
 #'
-#' Samples outside the signal range are assumed to be zero.
-#'
-#' Range parameters are interpreted by \code{\link{SampleIndexRange}}.
+#' Samples outside the signal range are assumed to be zero. Range parameters are
+#' interpreted by \code{\link{SampleIndexRange}}.
 #'
 #' @inheritParams SampleIndexRange
 #'
