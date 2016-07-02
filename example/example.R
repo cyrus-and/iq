@@ -1,11 +1,11 @@
 library(iq)
 
-# setup some fancy colors
+# set up some fancy colors
 plot.color <- '#007f00'
 par(bg = '#000000', fg = '#666666', col.main = '#ff4200', col.axis = '#ffad00', col.lab = '#666666')
 palette <- colorRampPalette(c('#000000', '#0074ff', '#00f900', '#ff4200'))(100)
 
-# setup the plot layout
+# set up the plot layout
 layout(matrix(c(1:4, 5, 5, 6, 7), nrow = 4, ncol = 2))
 par(mar = c(4, 4, 2, 2), mgp = c(2.5, 1, 0))
 
@@ -34,14 +34,13 @@ spectrogram$y <- spectrogram$y / 1e6
 image(spectrogram, col = palette,
       xlab = 'Time (s)', ylab = 'Frequency (MHz)', main = 'Spectrogram')
 
-# plot the spectrum at the given time using a rectangular window 1024 samples wide (default)
+# plot the spectrum at the given times using a rectangular window 1024 samples wide (default)
 at.time <- 0.1
 spectrum <- iq::Spectrum(signal, at.time)
 plot(spectrum$frequency / 1e6, spectrum$power, type = 'l', ylim = c(-100, 0),
      col = plot.color, xlab = 'Frequency (MHz)', ylab = 'Power (dB)',
      main = paste0('Power spectrum at ', at.time, 's'))
 
-# plot the spectrum at the given time using a rectangular window 1024 samples wide (default)
 at.time <- 0.3
 spectrum <- iq::Spectrum(signal, at.time)
 plot(spectrum$frequency / 1e6, spectrum$power, type = 'l', ylim = c(-100, 0),
