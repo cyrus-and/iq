@@ -22,7 +22,8 @@ TimeAtSampleIndex <- function(sample.index, sample.rate) {
 
 #' Extract a range of sample indexes.
 #'
-#' Sample indices take precedence over times. When boudaries are omitted
+#' Sample indices take precedence over times whereas the maximum number of
+#' samples take precedence over the sample rate. When boudaries are omitted
 #' (\code{NA}) then the boundaries of the signal are used. If \code{max.samples}
 #' is \code{NA} all the sample indices in the range are returned.
 #'
@@ -32,13 +33,13 @@ TimeAtSampleIndex <- function(sample.index, sample.rate) {
 #' @param from.time Time of the first sample.
 #' @param to.time Time of the last sample.
 #' @param max.samples Maximum number of returned sample indices.
+#' @param sample.rate New sample rate.
 #'
 #' @return A vector containing at most \code{max.samples} sample indices from
 #'   the given range.
-SampleIndexRange <- function(signal,
-                             first.sample.index, last.sample.index,
-                             from.time, to.time, max.samples) {
-  # convert times and use dafault values
+SampleIndexRange <- function(signal, first.sample.index, last.sample.index,
+                             from.time, to.time, max.samples, sample.rate) {
+  # convert and use dafault values
   if (is.na(first.sample.index)) {
     if (is.na(from.time)) {
       first.sample.index <- 1
@@ -53,11 +54,16 @@ SampleIndexRange <- function(signal,
       last.sample.index <- SampleIndexAtTime(to.time, signal$sample.rate)
     }
   }
+  samples.between <- last.sample.index - first.sample.index + 1
   if (is.na(max.samples)) {
-    max.samples <- Inf
+    if (is.na(sample.rate)) {
+      max.samples <- Inf
+    } else {
+      new.duration <- samples.between / signal$sample.rate
+      max.samples <- trunc(sample.rate * new.duration)
+    }
   }
   # compute the new sample index range
-  samples.between <- last.sample.index - first.sample.index + 1
   sample.index.range <- seq.int(first.sample.index, last.sample.index,
                                 length.out=min(samples.between, max.samples))
   return(sample.index.range)
@@ -74,10 +80,10 @@ SampleIndexRange <- function(signal,
 #'
 #' @export
 SampleRange <- function(signal, first.sample.index = NA, last.sample.index = NA,
-                        from.time = NA, to.time = NA, max.samples = NA) {
+                        from.time = NA, to.time = NA, max.samples = NA, sample.rate = NA) {
   # compute the sample index range
   sample.index.range <- SampleIndexRange(signal, first.sample.index, last.sample.index,
-                                         from.time, to.time, max.samples)
+                                         from.time, to.time, max.samples, sample.rate)
   # compute the time range
   time <- TimeAtSampleIndex(sample.index.range, signal$sample.rate)
   # normalize and convert samples to complex numbers defaulting to zero for the

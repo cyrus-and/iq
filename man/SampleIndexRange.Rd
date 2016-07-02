@@ -5,7 +5,7 @@
 \title{Extract a range of sample indexes.}
 \usage{
 SampleIndexRange(signal, first.sample.index, last.sample.index, from.time,
-  to.time, max.samples)
+  to.time, max.samples, sample.rate)
 }
 \arguments{
 \item{signal}{Source signal}
@@ -19,13 +19,16 @@ SampleIndexRange(signal, first.sample.index, last.sample.index, from.time,
 \item{to.time}{Time of the last sample.}
 
 \item{max.samples}{Maximum number of returned sample indices.}
+
+\item{sample.rate}{New sample rate.}
 }
 \value{
 A vector containing at most \code{max.samples} sample indices from
   the given range.
 }
 \description{
-Sample indices take precedence over times. When boudaries are omitted
+Sample indices take precedence over times whereas the maximum number of
+samples take precedence over the sample rate. When boudaries are omitted
 (\code{NA}) then the boundaries of the signal are used. If \code{max.samples}
 is \code{NA} all the sample indices in the range are returned.
 }
