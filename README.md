@@ -9,7 +9,7 @@ Example
 
 The following is the output obtained by running [example.R](example/example.R).
 
-![Example](http://i.imgur.com/mpL7F4J.png)
+![Example](http://i.imgur.com/RIU3Fcr.png)
 
 Features
 ========

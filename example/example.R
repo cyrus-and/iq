@@ -1,7 +1,7 @@
 library(iq)
 
 # set up some fancy colors
-plot.color <- '#007f00'
+plot.color <- '#00f900'
 par(bg = '#000000', fg = '#666666', col.main = '#ff4200', col.axis = '#ffad00', col.lab = '#666666')
 palette <- colorRampPalette(c('#000000', '#0074ff', '#00f900', '#ff4200'))(100)
 
