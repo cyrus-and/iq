@@ -2,6 +2,8 @@
 #'
 #' @param iq I/Q complex value.
 #'
+#' @return In-phase component of an I/Q sample.
+#'
 #' @export
 InPhase <- function(iq) {
   return(Re(iq))
@@ -10,6 +12,8 @@ InPhase <- function(iq) {
 #' Quadrature component of an I/Q sample
 #'
 #' @param iq I/Q complex value.
+#'
+#' @return Quadrature component of an I/Q sample.
 #'
 #' @export
 Quadrature <- function(iq) {
@@ -20,6 +24,8 @@ Quadrature <- function(iq) {
 #'
 #' @param iq I/Q complex value.
 #'
+#' @return Magnitude of an I/Q sample.
+#'
 #' @export
 Magnitude <- function(iq) {
   return(Mod(iq))
@@ -29,6 +35,8 @@ Magnitude <- function(iq) {
 #'
 #' @param iq I/Q complex value.
 #'
+#' @return Phase of an I/Q sample.
+#'
 #' @export
 Phase <- function(iq) {
   return(Arg(iq))
@@ -37,6 +45,8 @@ Phase <- function(iq) {
 #' Power of an I/Q sample
 #'
 #' @param iq I/Q complex value.
+#'
+#' @return Power of an I/Q sample.
 #'
 #' @export
 Power <- function(iq) {
