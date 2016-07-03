@@ -5,6 +5,8 @@
 #'
 #' @return A signal representation.
 #'
+#' @seealso \code{\link{base::memDecompress}}
+#'
 #' @export
 FromFile <- function(file.name, sample.rate, carrier.frequency = NA) {
   # read the whole file

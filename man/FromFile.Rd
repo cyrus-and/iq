@@ -19,4 +19,7 @@ A signal representation.
 \description{
 Create a signal representation from a file.
 }
+\seealso{
+\code{\link{base::memDecompress}}
+}
 
