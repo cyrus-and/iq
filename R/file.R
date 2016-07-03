@@ -17,3 +17,17 @@ LoadRawFile <- function(file.name) {
   raw.samples <- memDecompress(raw.samples, type = compression)
   return(raw.samples)
 }
+
+#' Create a signal representation from a file.
+#'
+#' @param file.name Input file name.
+#' @inheritParams FromRawVector
+#'
+#' @return A signal representation.
+#'
+#' @export
+FromFile <- function(file.name, sample.rate, carrier.frequency = NA) {
+  raw.vector <- LoadRawFile(file.name)
+  signal <- FromRawVector(raw.vector, sample.rate, carrier.frequency)
+  return(signal)
+}

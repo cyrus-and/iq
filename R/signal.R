@@ -22,20 +22,6 @@ FromRawVector <- function(raw.vector, sample.rate, carrier.frequency = NA) {
   return(signal)
 }
 
-#' Create a signal representation from a file.
-#'
-#' @param file.name Input file name.
-#' @inheritParams FromRawVector
-#'
-#' @return A signal representation.
-#'
-#' @export
-FromFile <- function(file.name, sample.rate, carrier.frequency = NA) {
-  raw.vector <- LoadRawFile(file.name)
-  signal <- FromRawVector(raw.vector, sample.rate, carrier.frequency)
-  return(signal)
-}
-
 #' Create a new signal by resampling a portion of another
 #'
 #' Range parameters are interpreted by \code{\link{SampleIndexRange}}.
