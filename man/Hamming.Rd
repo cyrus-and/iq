@@ -15,7 +15,7 @@ Hamming(size, alpha = 0.54)
 Hamming window function.
 }
 \seealso{
-Other fft: \code{\link{Hanning}},
+Other FFT: \code{\link{Hanning}},
   \code{\link{Rectangular}}, \code{\link{Spectrogram}},
   \code{\link{Spectrum}}, \code{\link{Triangular}}
 }

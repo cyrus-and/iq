@@ -2,7 +2,8 @@
 #'
 #' @param size Window width in number of samples.
 #'
-#' @family fft
+#' @family FFT
+#'
 #' @export
 Rectangular <- function(size) {
   window <- list(
@@ -16,7 +17,8 @@ Rectangular <- function(size) {
 #'
 #' @inheritParams Rectangular
 #'
-#' @family fft
+#' @family FFT
+#'
 #' @export
 Triangular <- function(size) {
   window <- list(
@@ -31,7 +33,8 @@ Triangular <- function(size) {
 #' @param alpha Hamming window coefficient.
 #' @inheritParams Rectangular
 #'
-#' @family fft
+#' @family FFT
+#'
 #' @export
 Hamming <- function(size, alpha = 0.54) {
   window <- list(
@@ -45,7 +48,8 @@ Hamming <- function(size, alpha = 0.54) {
 #'
 #' @inheritParams Rectangular
 #'
-#' @family fft
+#' @family FFT
+#'
 #' @export
 Hanning <- function(size) {
   return(Hamming(size, 0.5))

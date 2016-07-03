@@ -13,7 +13,7 @@ Hanning(size)
 Hanning window function.
 }
 \seealso{
-Other fft: \code{\link{Hamming}},
+Other FFT: \code{\link{Hamming}},
   \code{\link{Rectangular}}, \code{\link{Spectrogram}},
   \code{\link{Spectrum}}, \code{\link{Triangular}}
 }

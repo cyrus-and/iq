@@ -32,7 +32,7 @@ Compute the spectrogram of the signal at the given time range.
 \seealso{
 graphics::image
 
-Other fft: \code{\link{Hamming}}, \code{\link{Hanning}},
+Other FFT: \code{\link{Hamming}}, \code{\link{Hanning}},
   \code{\link{Rectangular}}, \code{\link{Spectrum}},
   \code{\link{Triangular}}
 }

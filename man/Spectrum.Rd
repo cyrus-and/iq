@@ -21,7 +21,7 @@ A vector of \code{window$size} elements containing the resulting FFT
 Compute the power spectrum of the signal at the given time.
 }
 \seealso{
-Other fft: \code{\link{Hamming}}, \code{\link{Hanning}},
+Other FFT: \code{\link{Hamming}}, \code{\link{Hanning}},
   \code{\link{Rectangular}}, \code{\link{Spectrogram}},
   \code{\link{Triangular}}
 }

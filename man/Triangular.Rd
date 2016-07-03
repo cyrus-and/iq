@@ -13,7 +13,7 @@ Triangular(size)
 Triangular window function.
 }
 \seealso{
-Other fft: \code{\link{Hamming}}, \code{\link{Hanning}},
+Other FFT: \code{\link{Hamming}}, \code{\link{Hanning}},
   \code{\link{Rectangular}}, \code{\link{Spectrogram}},
   \code{\link{Spectrum}}
 }

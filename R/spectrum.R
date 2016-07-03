@@ -26,7 +26,8 @@ FrequencyScale <- function(signal, window) {
 #' @return A vector of \code{window$size} elements containing the resulting FFT
 #'   frequency bins.
 #'
-#' @family fft
+#' @family FFT
+#'
 #' @export
 Spectrum <- function(signal, at.time, window = Rectangular(1024)) {
   # take window$size samples before the given time
@@ -63,7 +64,8 @@ Spectrum <- function(signal, at.time, window = Rectangular(1024)) {
 #'
 #' @seealso graphics::image
 #'
-#' @family fft
+#' @family FFT
+#'
 #' @export
 Spectrogram <- function(signal, from.time = 0, to.time = signal$duration,
                         window = Rectangular(1024), segment.overlap = 0, n.segments) {
