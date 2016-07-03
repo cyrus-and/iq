@@ -39,7 +39,7 @@ Resample <- function(signal, new.sample.rate, first.sample.index = NA,
                                          from.time, to.time, sample.rate = new.sample.rate)
   # check original signal boundaries
   if (sample.index.range[1] < 1 || tail(sample.index.range , n = 1) > signal$n.samples) {
-    stop("Cannot resample outside the signal boundaries")
+    stop('Cannot resample outside the signal boundaries')
   }
   i.indices <- sample.index.range * 2 - 1
   q.indices <- sample.index.range * 2
