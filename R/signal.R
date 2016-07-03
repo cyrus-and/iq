@@ -35,3 +35,33 @@ FromFile <- function(file.name, sample.rate, carrier.frequency = NA) {
   signal <- FromRawVector(raw.vector, sample.rate, carrier.frequency)
   return(signal)
 }
+
+#' Create a new signal by resampling a portion of another
+#'
+#' Range parameters are interpreted by \code{\link{SampleIndexRange}}.
+#'
+#' @param new.sample.rate New sample rate.
+#' @inheritParams SampleIndexRange
+#'
+#' @return A resampled signal.
+#'
+#' @export
+Resample <- function(signal, new.sample.rate, first.sample.index = NA,
+                     last.sample.index = NA, from.time = NA, to.time = NA) {
+  # compute the sample index range
+  sample.index.range <- SampleIndexRange(signal, first.sample.index, last.sample.index,
+                                         from.time, to.time, sample.rate = new.sample.rate)
+  # check original signal boundaries
+  if (sample.index.range[1] < 1 || tail(sample.index.range , n = 1) > signal$n.samples) {
+    stop("Cannot resample outside the signal boundaries")
+  }
+  i.indices <- sample.index.range * 2 - 1
+  q.indices <- sample.index.range * 2
+  indices <- c(rbind(i.indices, q.indices))
+  # update and return the signal (a copy of)
+  signal$raw.vector <- signal$raw.vector[indices]
+  signal$sample.rate <- new.sample.rate
+  signal$n.samples <- length(sample.index.range)
+  signal$duration <- length(sample.index.range) / new.sample.rate
+  return(signal)
+}

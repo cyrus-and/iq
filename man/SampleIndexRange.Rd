@@ -4,8 +4,8 @@
 \alias{SampleIndexRange}
 \title{Extract a range of sample indexes.}
 \usage{
-SampleIndexRange(signal, first.sample.index, last.sample.index, from.time,
-  to.time, max.samples, sample.rate)
+SampleIndexRange(signal, first.sample.index = NA, last.sample.index = NA,
+  from.time = NA, to.time = NA, max.samples = NA, sample.rate = NA)
 }
 \arguments{
 \item{signal}{Source signal}
