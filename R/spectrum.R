@@ -21,7 +21,10 @@ FrequencyScale <- function(signal, window) {
 #'
 #' @param signal Source signal.
 #' @param at.time Time instant.
-#' @param window FFT window function.
+#' @param window FFT window function. Custom windows are just named lists:
+#'   \code{'size'} the window size in number of samples; \code{'value'} a
+#'   function taking an integer in range \code{0:(size - 1)} and returning the
+#'   window value.
 #'
 #' @return A vector of \code{window$size} elements containing the resulting FFT
 #'   frequency bins.

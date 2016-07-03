@@ -14,7 +14,10 @@ Spectrogram(signal, from.time = 0, to.time = signal$duration,
 
 \item{to.time}{To time instant.}
 
-\item{window}{FFT window function.}
+\item{window}{FFT window function. Custom windows are just named lists:
+\code{'size'} the window size in number of samples; \code{'value'} a
+function taking an integer in range \code{0:(size - 1)} and returning the
+window value.}
 
 \item{segment.overlap}{Segment overlap ratio (0 means contiguous segments),
 negative values produce spaced segments.}

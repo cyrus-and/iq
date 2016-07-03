@@ -11,7 +11,10 @@ Spectrum(signal, at.time, window = Rectangular(1024))
 
 \item{at.time}{Time instant.}
 
-\item{window}{FFT window function.}
+\item{window}{FFT window function. Custom windows are just named lists:
+\code{'size'} the window size in number of samples; \code{'value'} a
+function taking an integer in range \code{0:(size - 1)} and returning the
+window value.}
 }
 \value{
 A vector of \code{window$size} elements containing the resulting FFT
