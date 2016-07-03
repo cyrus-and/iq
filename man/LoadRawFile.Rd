@@ -14,6 +14,6 @@ A raw vector containing the file.
 }
 \description{
 Accordingly to the file extension, the content of the file is passed to
-\code{memDecompress}.
+\code{\link{memDecompress}}.
 }
 
