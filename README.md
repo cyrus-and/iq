@@ -9,6 +9,6 @@ Example
 
 The following is the output obtained by running [example.R](example/example.R).
 
-![Example](http://i.imgur.com/vSjFuZm.png)
+![Example](http://i.imgur.com/mpL7F4J.png)
 
 [rtl-sdr]: http://www.rtl-sdr.com/

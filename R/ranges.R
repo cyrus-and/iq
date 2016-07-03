@@ -64,8 +64,8 @@ SampleIndexRange <- function(signal, first.sample.index, last.sample.index,
     }
   }
   # compute the new sample index range
-  sample.index.range <- seq.int(first.sample.index, last.sample.index,
-                                length.out=min(samples.between, max.samples))
+  sample.index.range <- round(seq.int(first.sample.index, last.sample.index,
+                                      length.out=min(samples.between, max.samples)))
   return(sample.index.range)
 }
 
