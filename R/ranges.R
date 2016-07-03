@@ -37,8 +37,8 @@ TimeAtSampleIndex <- function(sample.index, sample.rate) {
 #'
 #' @return A vector containing at most \code{max.samples} sample indices from
 #'   the given range.
-SampleIndexRange <- function(signal, first.sample.index, last.sample.index,
-                             from.time, to.time, max.samples, sample.rate) {
+SampleIndexRange <- function(signal, first.sample.index = NA, last.sample.index = NA,
+                             from.time = NA, to.time = NA, max.samples = NA, sample.rate = NA) {
   # convert and use dafault values
   if (is.na(first.sample.index)) {
     if (is.na(from.time)) {
