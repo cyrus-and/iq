@@ -2,7 +2,7 @@ iq
 ==
 
 This package offers a convenient way to parse and analyze I/Q files like those
-produced by an [RTL-SDR][rtl-sdr] dongle.
+produced by an [RTL-SDR][rtl-sdr-home] dongle.
 
 Example
 =======
@@ -32,4 +32,4 @@ the available functions:
    signal using builtin (`iq::Rectangular`, `iq::Hamming`, etc.) or custom
    window functions.
 
-[rtl-sdr]: http://www.rtl-sdr.com/
+[rtl-sdr-home]: http://www.rtl-sdr.com/
