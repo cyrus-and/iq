@@ -32,4 +32,16 @@ the available functions:
    signal using builtin (`iq::Rectangular`, `iq::Hamming`, etc.) or custom
    window functions.
 
+Motivation
+==========
+
+As I am a newbie to the SDR world I thought writing this library would be a good
+opportunity to both delve a bit into the unfamiliar topic of signal analysis and
+to gain some expertise on the R package development.
+
+This is also an attempt to answer the question: *"Well, I've captured something
+with [`rtl_sdr`][rtl-sdr-software], now what?"* which is probably obvious for
+someone in the field but quite confusing for newcomers.
+
 [rtl-sdr-home]: http://www.rtl-sdr.com/
+[rtl-sdr-software]: http://sdr.osmocom.org/trac/wiki/rtl-sdr#rtl_sdr
