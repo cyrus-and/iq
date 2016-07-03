@@ -30,7 +30,7 @@ A named list suitable to be printed with \code{image}, \code{x}
 Compute the spectrogram of the signal at the given time range.
 }
 \seealso{
-graphics::image
+\code{\link[graphics]{image}}
 
 Other FFT: \code{\link{Hamming}}, \code{\link{Hanning}},
   \code{\link{Rectangular}}, \code{\link{Spectrum}},

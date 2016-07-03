@@ -15,6 +15,6 @@ ToFile(signal, file.name)
 The file is compressed according to its extension.
 }
 \seealso{
-\code{\link{base::memCompress}}
+\code{\link[base]{memCompress}}
 }
 

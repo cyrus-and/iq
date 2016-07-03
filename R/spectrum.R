@@ -62,7 +62,7 @@ Spectrum <- function(signal, at.time, window = Rectangular(1024)) {
 #' @return A named list suitable to be printed with \code{image}, \code{x}
 #'   element represents the time while \code{y} represents the frequency.
 #'
-#' @seealso graphics::image
+#' @seealso \code{\link[graphics]{image}}
 #'
 #' @family FFT
 #'

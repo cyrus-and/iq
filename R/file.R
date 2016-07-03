@@ -5,7 +5,7 @@
 #'
 #' @return A signal representation.
 #'
-#' @seealso \code{\link{base::memDecompress}}
+#' @seealso \code{\link[base]{memDecompress}}
 #'
 #' @export
 FromFile <- function(file.name, sample.rate, carrier.frequency = NA) {
@@ -29,7 +29,7 @@ FromFile <- function(file.name, sample.rate, carrier.frequency = NA) {
 #' @param signal Source signal.
 #' @param file.name Output file name.
 #'
-#' @seealso \code{\link{base::memCompress}}
+#' @seealso \code{\link[base]{memCompress}}
 #'
 #' @export
 ToFile <- function(signal, file.name) {

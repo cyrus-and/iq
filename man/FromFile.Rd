@@ -20,6 +20,6 @@ A signal representation.
 Create a signal representation from a file.
 }
 \seealso{
-\code{\link{base::memDecompress}}
+\code{\link[base]{memDecompress}}
 }
 
