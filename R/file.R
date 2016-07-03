@@ -1,4 +1,4 @@
-#' Create a signal representation from a file.
+#' Create a signal representation from a file
 #'
 #' @param file.name Input file name.
 #' @inheritParams FromRawVector
@@ -22,7 +22,7 @@ FromFile <- function(file.name, sample.rate, carrier.frequency = NA) {
   return(signal)
 }
 
-#' Write a signal representation to a file.
+#' Write a signal representation to a file
 #'
 #' The file is compressed according to its extension.
 #'

@@ -1,4 +1,4 @@
-#' Frequency scale used to interpret the frequency bins.
+#' Frequency scale used to interpret the frequency bins
 #'
 #' The resulting frequencies are relative to the carrier frequency of the
 #' signal, if present, otherwise to 0.
@@ -17,7 +17,7 @@ FrequencyScale <- function(signal, window) {
   return(frequency)
 }
 
-#' Compute the power spectrum of the signal at the given time.
+#' Compute the power spectrum of the signal at the given time
 #'
 #' @param signal Source signal.
 #' @param at.time Time instant.
@@ -49,7 +49,7 @@ Spectrum <- function(signal, at.time, window = Rectangular(1024)) {
   return(spectrum)
 }
 
-#' Compute the spectrogram of the signal at the given time range.
+#' Compute the spectrogram of the signal at the given time range
 #'
 #' @param from.time From time instant.
 #' @param to.time To time instant.

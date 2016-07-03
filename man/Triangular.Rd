@@ -2,7 +2,7 @@
 % Please edit documentation in R/windows.R
 \name{Triangular}
 \alias{Triangular}
-\title{Triangular window function.}
+\title{Triangular window function}
 \usage{
 Triangular(size)
 }
@@ -10,7 +10,7 @@ Triangular(size)
 \item{size}{Window width in number of samples.}
 }
 \description{
-Triangular window function.
+Triangular window function
 }
 \seealso{
 Other FFT: \code{\link{Hamming}}, \code{\link{Hanning}},

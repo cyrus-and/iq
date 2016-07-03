@@ -2,7 +2,7 @@
 % Please edit documentation in R/file.R
 \name{FromFile}
 \alias{FromFile}
-\title{Create a signal representation from a file.}
+\title{Create a signal representation from a file}
 \usage{
 FromFile(file.name, sample.rate, carrier.frequency = NA)
 }
@@ -17,7 +17,7 @@ FromFile(file.name, sample.rate, carrier.frequency = NA)
 A signal representation.
 }
 \description{
-Create a signal representation from a file.
+Create a signal representation from a file
 }
 \seealso{
 \code{\link[base]{memDecompress}}

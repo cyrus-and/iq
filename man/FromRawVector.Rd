@@ -2,7 +2,7 @@
 % Please edit documentation in R/signal.R
 \name{FromRawVector}
 \alias{FromRawVector}
-\title{Create a signal representation from a raw vector of bytes.}
+\title{Create a signal representation from a raw vector of bytes}
 \usage{
 FromRawVector(raw.vector, sample.rate, carrier.frequency = NA)
 }

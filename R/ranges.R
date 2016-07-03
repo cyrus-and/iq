@@ -1,4 +1,4 @@
-#' Sample index at the given time instant.
+#' Sample index at the given time instant
 #'
 #' @param time Time instant.
 #' @param sample.rate Sample rate of the signal.
@@ -9,7 +9,7 @@ SampleIndexAtTime <- function(time, sample.rate) {
   return(sample.index)
 }
 
-#' Time corresponding to the beginning of the given sample.
+#' Time corresponding to the beginning of the given sample
 #'
 #' @param sample.index Index of the sample.
 #' @param sample.rate Sample rate of the signal.
@@ -20,7 +20,7 @@ TimeAtSampleIndex <- function(sample.index, sample.rate) {
   return(time)
 }
 
-#' Extract a range of sample indexes.
+#' Extract a range of sample indexes
 #'
 #' Sample indices take precedence over times whereas the maximum number of
 #' samples take precedence over the sample rate. When boudaries are omitted
@@ -69,7 +69,7 @@ SampleIndexRange <- function(signal, first.sample.index = NA, last.sample.index 
   return(sample.index.range)
 }
 
-#' Extract a range of the signal.
+#' Extract a range of the signal
 #'
 #' Samples outside the signal range are assumed to be zero. Range parameters are
 #' interpreted by \code{\link{SampleIndexRange}}.

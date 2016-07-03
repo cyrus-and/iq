@@ -2,7 +2,7 @@
 % Please edit documentation in R/ranges.R
 \name{TimeAtSampleIndex}
 \alias{TimeAtSampleIndex}
-\title{Time corresponding to the beginning of the given sample.}
+\title{Time corresponding to the beginning of the given sample}
 \usage{
 TimeAtSampleIndex(sample.index, sample.rate)
 }
@@ -15,6 +15,6 @@ TimeAtSampleIndex(sample.index, sample.rate)
 A time corresponding to the beginning of the given sample.
 }
 \description{
-Time corresponding to the beginning of the given sample.
+Time corresponding to the beginning of the given sample
 }
 

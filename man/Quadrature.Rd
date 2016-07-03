@@ -9,6 +9,9 @@ Quadrature(iq)
 \arguments{
 \item{iq}{I/Q complex value.}
 }
+\value{
+Quadrature component of an I/Q sample.
+}
 \description{
 Quadrature component of an I/Q sample
 }

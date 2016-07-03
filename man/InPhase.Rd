@@ -9,6 +9,9 @@ InPhase(iq)
 \arguments{
 \item{iq}{I/Q complex value.}
 }
+\value{
+In-phase component of an I/Q sample.
+}
 \description{
 In-phase component of an I/Q sample
 }

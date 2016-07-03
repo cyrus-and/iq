@@ -2,7 +2,7 @@
 % Please edit documentation in R/spectrum.R
 \name{FrequencyScale}
 \alias{FrequencyScale}
-\title{Frequency scale used to interpret the frequency bins.}
+\title{Frequency scale used to interpret the frequency bins}
 \usage{
 FrequencyScale(signal, window)
 }

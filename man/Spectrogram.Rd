@@ -2,7 +2,7 @@
 % Please edit documentation in R/spectrum.R
 \name{Spectrogram}
 \alias{Spectrogram}
-\title{Compute the spectrogram of the signal at the given time range.}
+\title{Compute the spectrogram of the signal at the given time range}
 \usage{
 Spectrogram(signal, from.time = 0, to.time = signal$duration,
   window = Rectangular(1024), segment.overlap = 0, n.segments)
@@ -27,7 +27,7 @@ A named list suitable to be printed with \code{image}, \code{x}
   element represents the time while \code{y} represents the frequency.
 }
 \description{
-Compute the spectrogram of the signal at the given time range.
+Compute the spectrogram of the signal at the given time range
 }
 \seealso{
 \code{\link[graphics]{image}}

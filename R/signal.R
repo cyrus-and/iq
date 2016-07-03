@@ -1,4 +1,4 @@
-#' Create a signal representation from a raw vector of bytes.
+#' Create a signal representation from a raw vector of bytes
 #'
 #' The raw vector must be a sequence of I/Q values (1 byte per component).
 #'

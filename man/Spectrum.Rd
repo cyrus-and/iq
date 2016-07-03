@@ -2,7 +2,7 @@
 % Please edit documentation in R/spectrum.R
 \name{Spectrum}
 \alias{Spectrum}
-\title{Compute the power spectrum of the signal at the given time.}
+\title{Compute the power spectrum of the signal at the given time}
 \usage{
 Spectrum(signal, at.time, window = Rectangular(1024))
 }
@@ -18,7 +18,7 @@ A vector of \code{window$size} elements containing the resulting FFT
   frequency bins.
 }
 \description{
-Compute the power spectrum of the signal at the given time.
+Compute the power spectrum of the signal at the given time
 }
 \seealso{
 Other FFT: \code{\link{Hamming}}, \code{\link{Hanning}},

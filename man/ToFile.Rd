@@ -2,7 +2,7 @@
 % Please edit documentation in R/file.R
 \name{ToFile}
 \alias{ToFile}
-\title{Write a signal representation to a file.}
+\title{Write a signal representation to a file}
 \usage{
 ToFile(signal, file.name)
 }

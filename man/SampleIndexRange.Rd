@@ -2,7 +2,7 @@
 % Please edit documentation in R/ranges.R
 \name{SampleIndexRange}
 \alias{SampleIndexRange}
-\title{Extract a range of sample indexes.}
+\title{Extract a range of sample indexes}
 \usage{
 SampleIndexRange(signal, first.sample.index = NA, last.sample.index = NA,
   from.time = NA, to.time = NA, max.samples = NA, sample.rate = NA)

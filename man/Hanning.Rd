@@ -2,7 +2,7 @@
 % Please edit documentation in R/windows.R
 \name{Hanning}
 \alias{Hanning}
-\title{Hanning window function.}
+\title{Hanning window function}
 \usage{
 Hanning(size)
 }
@@ -10,7 +10,7 @@ Hanning(size)
 \item{size}{Window width in number of samples.}
 }
 \description{
-Hanning window function.
+Hanning window function
 }
 \seealso{
 Other FFT: \code{\link{Hamming}},

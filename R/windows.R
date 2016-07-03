@@ -1,4 +1,4 @@
-#' Rectangular window function.
+#' Rectangular window function
 #'
 #' @param size Window width in number of samples.
 #'
@@ -13,7 +13,7 @@ Rectangular <- function(size) {
   return(window)
 }
 
-#' Triangular window function.
+#' Triangular window function
 #'
 #' @inheritParams Rectangular
 #'
@@ -28,7 +28,7 @@ Triangular <- function(size) {
   return(window)
 }
 
-#' Hamming window function.
+#' Hamming window function
 #'
 #' @param alpha Hamming window coefficient.
 #' @inheritParams Rectangular
@@ -44,7 +44,7 @@ Hamming <- function(size, alpha = 0.54) {
   return(window)
 }
 
-#' Hanning window function.
+#' Hanning window function
 #'
 #' @inheritParams Rectangular
 #'

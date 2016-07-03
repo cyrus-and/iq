@@ -9,6 +9,9 @@ Magnitude(iq)
 \arguments{
 \item{iq}{I/Q complex value.}
 }
+\value{
+Magnitude of an I/Q sample.
+}
 \description{
 Magnitude of an I/Q sample
 }

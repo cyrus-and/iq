@@ -9,6 +9,9 @@ Phase(iq)
 \arguments{
 \item{iq}{I/Q complex value.}
 }
+\value{
+Phase of an I/Q sample.
+}
 \description{
 Phase of an I/Q sample
 }

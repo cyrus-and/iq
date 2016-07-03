@@ -9,6 +9,9 @@ Power(iq)
 \arguments{
 \item{iq}{I/Q complex value.}
 }
+\value{
+Power of an I/Q sample.
+}
 \description{
 Power of an I/Q sample
 }

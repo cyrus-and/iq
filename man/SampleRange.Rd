@@ -2,7 +2,7 @@
 % Please edit documentation in R/ranges.R
 \name{SampleRange}
 \alias{SampleRange}
-\title{Extract a range of the signal.}
+\title{Extract a range of the signal}
 \usage{
 SampleRange(signal, first.sample.index = NA, last.sample.index = NA,
   from.time = NA, to.time = NA, max.samples = NA, sample.rate = NA)

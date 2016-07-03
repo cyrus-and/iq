@@ -2,7 +2,7 @@
 % Please edit documentation in R/ranges.R
 \name{SampleIndexAtTime}
 \alias{SampleIndexAtTime}
-\title{Sample index at the given time instant.}
+\title{Sample index at the given time instant}
 \usage{
 SampleIndexAtTime(time, sample.rate)
 }
@@ -15,6 +15,6 @@ SampleIndexAtTime(time, sample.rate)
 A sample index at the given time instant.
 }
 \description{
-Sample index at the given time instant.
+Sample index at the given time instant
 }
 

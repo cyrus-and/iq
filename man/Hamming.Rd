@@ -2,7 +2,7 @@
 % Please edit documentation in R/windows.R
 \name{Hamming}
 \alias{Hamming}
-\title{Hamming window function.}
+\title{Hamming window function}
 \usage{
 Hamming(size, alpha = 0.54)
 }
@@ -12,7 +12,7 @@ Hamming(size, alpha = 0.54)
 \item{alpha}{Hamming window coefficient.}
 }
 \description{
-Hamming window function.
+Hamming window function
 }
 \seealso{
 Other FFT: \code{\link{Hanning}},

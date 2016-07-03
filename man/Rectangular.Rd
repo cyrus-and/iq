@@ -2,7 +2,7 @@
 % Please edit documentation in R/windows.R
 \name{Rectangular}
 \alias{Rectangular}
-\title{Rectangular window function.}
+\title{Rectangular window function}
 \usage{
 Rectangular(size)
 }
@@ -10,7 +10,7 @@ Rectangular(size)
 \item{size}{Window width in number of samples.}
 }
 \description{
-Rectangular window function.
+Rectangular window function
 }
 \seealso{
 Other FFT: \code{\link{Hamming}}, \code{\link{Hanning}},
