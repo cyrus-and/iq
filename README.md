@@ -44,9 +44,11 @@ devtools::install_github('cyrus-and/iq')
 Motivation
 ==========
 
-As I am a newbie to the SDR world I thought writing this library would be a good
-opportunity to both delve a bit into the unfamiliar topic of signal analysis and
-to gain some expertise on the R package development.
+Although there are already a [whole][rtl-sdr-apps-1] [bunch][rtl-sdr-apps-2] of
+related software, I thought, as a newbie to the SDR world, that writing this
+library would be a good opportunity to both delve a bit into the unfamiliar
+topic of signal analysis and to gain some expertise on the R package
+development.
 
 This is also an attempt to answer the question: *"Well, I've captured something
 with [`rtl_sdr`][rtl-sdr-software], now what?"* which is probably obvious for
@@ -54,4 +56,6 @@ someone in the field but quite confusing for newcomers.
 
 [rtl-sdr-home]: http://www.rtl-sdr.com/
 [devtools]: https://github.com/hadley/devtools
+[rtl-sdr-apps-1]: http://sdr.osmocom.org/trac/wiki/rtl-sdr#KnownApps
+[rtl-sdr-apps-2]: http://www.rtl-sdr.com/big-list-rtl-sdr-supported-software/
 [rtl-sdr-software]: http://sdr.osmocom.org/trac/wiki/rtl-sdr#rtl_sdr
