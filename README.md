@@ -32,6 +32,15 @@ the available functions:
    signal using builtin (`iq::Rectangular`, `iq::Hamming`, etc.) or custom
    window functions.
 
+Installation
+============
+
+Using [`devtools`][devtools]:
+
+```R
+devtools::install_github('cyrus-and/iq')
+```
+
 Motivation
 ==========
 
@@ -44,4 +53,5 @@ with [`rtl_sdr`][rtl-sdr-software], now what?"* which is probably obvious for
 someone in the field but quite confusing for newcomers.
 
 [rtl-sdr-home]: http://www.rtl-sdr.com/
+[devtools]: https://github.com/hadley/devtools
 [rtl-sdr-software]: http://sdr.osmocom.org/trac/wiki/rtl-sdr#rtl_sdr
