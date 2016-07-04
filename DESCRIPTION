@@ -2,12 +2,11 @@ Package: iq
 Type: Package
 Title: I/Q file analysis toolkit
 Version: 0.1.0
-Authors@R: person("Andrea", "Cardaci",
-                  email = "cyrus.and@gmail.com",
-                  role = c("aut", "cre", "cph"))
+Authors@R:
+  person('Andrea', 'Cardaci', email = 'cyrus.and@gmail.com', role = c('aut', 'cre'))
 Description:
-    This package offers a convenient way to parse and analyze I/Q files like
-    those produced by an RTL-SDR dongle.
+  This package offers a convenient way to parse and analyze I/Q files like
+  those produced by an RTL-SDR dongle.
 License: MIT + file LICENSE
 LazyData: TRUE
 RoxygenNote: 5.0.1
