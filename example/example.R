@@ -32,17 +32,17 @@ to.time <- 0.5
 spectrogram <- iq::Spectrogram(signal, from.time, to.time, iq::Hamming(1024))
 spectrogram$y <- spectrogram$y / 1e6
 image(spectrogram, col = palette,
-      xlab = 'Time (s)', ylab = 'Frequency (MHz)', main = 'Spectrogram')
+      main = 'Spectrogram', xlab = 'Time (s)', ylab = 'Frequency (MHz)')
 
 # plot the spectrum at the given times using a rectangular window 1024 samples wide (default)
 at.time <- 0.1
 spectrum <- iq::Spectrum(signal, at.time)
 plot(spectrum$frequency / 1e6, spectrum$power, type = 'l', ylim = c(-100, 0),
-     col = plot.color, xlab = 'Frequency (MHz)', ylab = 'Power (dB)',
-     main = paste0('Power spectrum at ', at.time, 's'))
+     col = plot.color, main = paste0('Power spectrum at ', at.time, 's'),
+     xlab = 'Frequency (MHz)', ylab = 'Power (dB)')
 
 at.time <- 0.3
 spectrum <- iq::Spectrum(signal, at.time)
 plot(spectrum$frequency / 1e6, spectrum$power, type = 'l', ylim = c(-100, 0),
-     col = plot.color, xlab = 'Frequency (MHz)', ylab = 'Power (dB)',
-     main = paste0('Power spectrum at ', at.time, 's'))
+     col = plot.color, main = paste0('Power spectrum at ', at.time, 's'),
+     xlab = 'Frequency (MHz)', ylab = 'Power (dB)')
