@@ -17,13 +17,13 @@ signal <- iq::FromFile(file.name = 'example/signal.bin.bz2',
 range <- iq::SampleRange(signal, from.time = 0.033, to.time = 0.040, max.samples = 1e3)
 
 # plot the components for the above range
-plot(range$time, Magnitude(range$iq), type = 'l', col = plot.color,
+plot(range$time, iq::Magnitude(range$iq), type = 'l', col = plot.color,
      main = 'Magnitude', xlab = 'Time (s)', ylab = '')
-plot(range$time, Phase(range$iq), type = 'l', col = plot.color,
+plot(range$time, iq::Phase(range$iq), type = 'l', col = plot.color,
      main = 'Phase', xlab = 'Time (s)', ylab = 'Radians')
-plot(range$time, InPhase(range$iq), type = 'l', col = plot.color,
+plot(range$time, iq::InPhase(range$iq), type = 'l', col = plot.color,
      main = 'In-phase', xlab = 'Time (s)', ylab = '')
-plot(range$time, Quadrature(range$iq), type = 'l', col = plot.color,
+plot(range$time, iq::Quadrature(range$iq), type = 'l', col = plot.color,
      main = 'Quadrature', xlab = 'Time (s)', ylab = '')
 
 # plot the spectrogram at the given range using a Hamming window 1024 samples wide
