@@ -14,7 +14,9 @@ FromFile(file.name, sample.rate, carrier.frequency = NA)
 \item{carrier.frequency}{Carrier frequency.}
 }
 \value{
-A signal representation.
+A signal representation: a named list with the following
+  self-explanatory fileds: \code{sample.rate}, \code{carrier.frequency},
+  \code{n.samples} and \code{duration} in seconds.
 }
 \description{
 Create a signal representation from a file

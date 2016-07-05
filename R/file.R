@@ -3,7 +3,9 @@
 #' @param file.name Input file name.
 #' @inheritParams FromRawVector
 #'
-#' @return A signal representation.
+#' @return A signal representation: a named list with the following
+#'   self-explanatory fileds: \code{sample.rate}, \code{carrier.frequency},
+#'   \code{n.samples} and \code{duration} in seconds.
 #'
 #' @seealso \code{\link[base]{memDecompress}}
 #'
