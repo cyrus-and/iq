@@ -4,8 +4,9 @@
 \alias{Spectrogram}
 \title{Compute the spectrogram of the signal at the given time range}
 \usage{
-Spectrogram(signal, from.time = 0, to.time = signal$duration,
-  window = Rectangular(1024), segment.overlap = 0, n.segments)
+Spectrogram(signal, from.time = window$size/signal$sample.rate,
+  to.time = signal$duration, window = Rectangular(1024),
+  segment.overlap = 0, n.segments)
 }
 \arguments{
 \item{signal}{Source signal.}

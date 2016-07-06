@@ -70,7 +70,8 @@ Spectrum <- function(signal, at.time, window = Rectangular(1024)) {
 #' @family FFT
 #'
 #' @export
-Spectrogram <- function(signal, from.time = 0, to.time = signal$duration,
+Spectrogram <- function(signal, from.time = window$size / signal$sample.rate,
+                        to.time = signal$duration,
                         window = Rectangular(1024), segment.overlap = 0, n.segments) {
   # compute the time instants
   if (missing(n.segments)) {
