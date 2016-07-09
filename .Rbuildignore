@@ -1,4 +1,5 @@
 ^_tmp$
+^doc$
 ^example$
 ^.*\.Rproj$
 ^\.Rproj\.user$

@@ -11,11 +11,14 @@ The following is the output obtained by running [example.R](example/example.R).
 
 ![Example](example/example.png)
 
-Features
-========
+Documentation
+=============
 
-See the embedded R documentation for the full reference; here is an overview of
-the available functions:
+See the embedded R help system for the full reference.
+
+The [overview](doc/overview.md) R vignette describes some use case.
+
+Here is a summary of the available functions:
 
  * Load from (`iq::FromFile`) and save to (`iq::ToFile`) plain or compressed
    binary files.

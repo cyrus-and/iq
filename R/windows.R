@@ -8,7 +8,7 @@
 Rectangular <- function(size) {
   window <- list(
     'size' = size,
-    'value' = function(x) 1
+    'value' = function(x) rep.int(1, length(x))
   )
   return(window)
 }
