@@ -23,7 +23,7 @@ Rectangular <- function(size) {
 Triangular <- function(size) {
   window <- list(
     'size' = size,
-    'value' = function(x) 1 - abs((x - (size - 1) / 2) / (size - 1))
+    'value' = function(x) 1 - abs((x - (size - 1) / 2) / (size / 2))
   )
   return(window)
 }
