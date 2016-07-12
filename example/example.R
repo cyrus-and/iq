@@ -1,5 +1,8 @@
 library(iq)
 
+# PNG device options
+png('example/example.png', 800, 500)
+
 # set up some fancy colors
 plot.color <- '#00f900'
 par(bg = '#000000', fg = '#666666', col.main = '#ff4200', col.axis = '#ffad00', col.lab = '#666666')
@@ -46,3 +49,6 @@ spectrum <- iq::Spectrum(signal, at.time)
 plot(spectrum$frequency / 1e6, spectrum$power, type = 'l', ylim = c(-100, 0),
      col = plot.color, main = paste0('Power spectrum at ', at.time, 's'),
      xlab = 'Frequency (MHz)', ylab = 'Power (dB)')
+
+# done with the plot device
+dev.off()
