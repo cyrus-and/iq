@@ -1,4 +1,5 @@
 ^_tmp$
+^Makefile$
 ^doc$
 ^example$
 ^.*\.Rproj$
