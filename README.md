@@ -4,21 +4,17 @@ iq
 This package offers a convenient way to parse and analyze I/Q files like those
 produced by an [RTL-SDR][rtl-sdr-home] dongle.
 
-Example
-=======
-
-The following is the output obtained by running [example.R](example/example.R).
+See [this R vignette](doc/overview.md) for a description of some use cases.
 
 ![Example](example/example.png)
 
-Documentation
-=============
+*(this is the output of [example.R](example/example.R))*
 
-See the embedded R help system for the full reference.
+Features
+========
 
-The [overview](doc/overview.md) R vignette describes some use case.
-
-Here is a summary of the available functions:
+See the embedded R help system for the full reference. Here is an overview of
+the available functions:
 
  * Load from (`iq::FromFile`) and save to (`iq::ToFile`) plain or compressed
    binary files.
