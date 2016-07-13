@@ -1,5 +1,5 @@
-Creating and loading a binary file
-----------------------------------
+Importing a binary file
+-----------------------
 
 Let us assume to have just captured some samples from your RTL-SDR
 device, for example with:
@@ -153,8 +153,8 @@ we can threshold the magnitude using 0.4 as break-point.
 
 <img src="overview_files/figure-markdown_strict/unnamed-chunk-16-1.png" style="display: block; margin: auto;" />
 
-Resample and save
------------------
+Resampling and exporting
+------------------------
 
 Similarly to `iq::SampleRange` it is possible to create a new signal by
 cutting and resampling another one. This is useful in combination with

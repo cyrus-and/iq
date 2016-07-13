@@ -27,7 +27,7 @@ image <- function(...) {
 }
 ```
 
-## Creating and loading a binary file
+## Importing a binary file
 
 Let us assume to have just captured some samples from your RTL-SDR device, for example with:
 
@@ -192,7 +192,7 @@ plot(range$time, pattern,
 polygon(range$time, pattern, col = 'black')
 ```
 
-## Resample and save
+## Resampling and exporting
 
 Similarly to `iq::SampleRange` it is possible to create a new signal by cutting and resampling another one. This is useful in combination with `iq::ToFile` which allows to save a signal in the usual binary format. So for example we now try to extract the above range using a lower sample rate (1 KHz instead of 1 Mhz).
 
